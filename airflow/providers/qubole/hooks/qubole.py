@@ -25,7 +25,7 @@ import time
 
 from qds_sdk.commands import (
     Command, DbExportCommand, DbImportCommand, DbTapQueryCommand, HadoopCommand, HiveCommand, PigCommand,
-    PrestoCommand, ShellCommand, SparkCommand, SqlCommand,
+    PrestoCommand, ShellCommand, SparkCommand, SqlCommand, JupyterNotebookCommand
 )
 from qds_sdk.qubole import Qubole
 
@@ -46,7 +46,8 @@ COMMAND_CLASSES = {
     "dbtapquerycmd": DbTapQueryCommand,
     "dbexportcmd": DbExportCommand,
     "dbimportcmd": DbImportCommand,
-    "sqlcmd": SqlCommand
+    "sqlcmd": SqlCommand,
+    "jupyternotebookcmd": JupyterNotebookCommand
 }
 
 POSITIONAL_ARGS = {
